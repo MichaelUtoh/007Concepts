@@ -48,6 +48,7 @@ const Home = () => {
   ]
 
   const partnerLogos = [
+    'clogo0.jpeg',
     'clogo1.png',
     'clogo2.png',
     'clogo3.jpeg',
@@ -132,9 +133,9 @@ const Home = () => {
       <div>
         <p className='font text-center m-5 text-3xl text-[#212121]'>Our Partners</p>
         <hr className="border border-red-600 mx-auto w-[150px]" />
-        <div className='flex justify-center m-5 m-10'>
+        <div className='flex justify-center m-5'>
           { partnerLogos.map((img, idx) => (
-              <img key={idx} className='bg-attr h-[60px] m-2 w-[100px] m-5' src={img} />
+              <img key={idx} className='bg-attr h-[60px] w-[100px] m-5' src={img} />
           ))}
         </div>
       </div>
