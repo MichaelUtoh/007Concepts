@@ -86,12 +86,12 @@ const Home = () => {
         <div className='card-wrap-1 flex justify-center mx-10 my-20'>
           {
             titles.map((title, idx) => (
-              <div key={idx} className="card w-96 bg-base-100 mx-2 shadow-xl">
+              <div key={idx} className="card card-body-1 w-96 bg-base-100 mx-2 shadow-xl">
                 <div className="card-body py-10">
                   <p>{messages[idx]}</p>
                   <div className="card-actions flex items-center justify-end mt-3">
                     <p className='font'>{title}</p>
-                    <div className="bg-attr h-16 rounded-full w-16" style={{backgroundImage: `url(${images[idx]})`}}></div>
+                    <div className="bg-attr bg-attr-img-1 h-16 rounded-full w-16" style={{backgroundImage: `url(${images[idx]})`}}></div>
                   </div>
                 </div>
               </div>
@@ -102,14 +102,14 @@ const Home = () => {
 
       <div className=''>
         <div className='card-wrap-2 flex justify-center mx-10 my-20'>
-          <p className='font font-bold m-20 text-[#212121] text-2xl'>Why Choose Us?</p>
+          <p className='font-bold m-20 mob-margin-sm mob-title-1 text-[#212121] text-2xl'>Why Choose Us?</p>
           {
             iconTitles.map((title, idx) => (
-              <div key={idx} className="card w-48 border-0 border-gray-50 hover:shadow-lg m-3 p-2">
+              <div key={idx} className="card mob-card-choice w-48 border-0 border-gray-50 hover:shadow-lg m-3 p-2">
                   <figure><div className='bg-attr h-12 w-12' style={{ backgroundImage: `url('${iconImages[idx]}')` }}> </div></figure>
                   <div className="card-body p-2 py-4 flex flex-col items-center justify-between">
-                    <h2 className="text-xlg font-bold text-center">{title}</h2>
-                    <p className="text-center w-10/12">
+                    <h2 className="font-bold mob-title-1 text-xlg text-center">{title}</h2>
+                    <p className="mob-text text-center w-10/12">
                     {iconMessages[idx]}
                     </p>
                   </div>
@@ -120,18 +120,16 @@ const Home = () => {
       </div>
 
       <div className='bg-gray-100'>
-        <div className='flex items-center justify-center p-20'>
-          <p className='font font-bold m-10 text-[#212121] text-4xl'>Do You Require?</p>
-
+        <div className='mob-require flex items-center justify-center p-20'>
+          <p className='font font-bold m-10 mob-margin-sm mob-title-2 text-[#212121] text-4xl'>Do You Require?</p>
           <div className="">
               <Image src='/equipment1.png' alt='Earth-moving equipments' height={300} width={600} />
           </div>
-
         </div>
       </div>
 
       <div>
-        <p className='font text-center m-5 text-3xl text-[#212121]'>Our Partners</p>
+        <p className='mob-margin-sm mob-title-2 text-center m-5 text-3xl text-[#212121]'>Our Partners</p>
         <hr className="border border-red-600 mx-auto w-[150px]" />
         <div className='card-wrap-3 flex justify-center m-5'>
           { partnerLogos.map((img, idx) => (

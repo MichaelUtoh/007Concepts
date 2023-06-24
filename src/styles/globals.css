@@ -30,19 +30,33 @@ body {
 
 
 @media only screen and (max-width: 600px) {
-    .bg-banner {height: 500px;}
+    .bg-banner { height: 500px; }
+    .bg-attr-img-1 { height: 50px; width: 50px; }
+    .card-actions { margin-top: 0; }
+    .card-body { padding: 10px }
+    .card-body-1 { 
+        /* background-color: #fb923c; */
+        font-size: 14px;
+        margin: 10px;
+        height: 250px;
+        padding: 5px;
+        width: 300px;
+    }
+    .card-wrap-1 { margin: auto; width: 80vw; }
+    .card-wrap-2 { margin: auto; width: 80vw; }
     .card-wrap-1, .card-wrap-2, .card-wrap-3 {
         align-items: center;
         flex-direction: column;
         justify-content: center;
     }
-    .link { color: blu; display: none; }
-    .logo {border: 1px solid red; height: 50px; margin-left: 10px; width: 100px;}
-    .mob-index {
-        border: 1px solid orange;
-        width: 100vw !important;
-    }
-    .mob-p-10 {padding: 10px;}
-    .mob-title-1 {font-size: 16px;}
-    .mob-title-2 {font-size: 24px;}
+    .navlink { color: blu; display: none; }
+    .logo { height: 50px; margin-left: 10px; width: 100px; }
+    .mob-card-choice { width: 300px; }
+    .mob-index { width: 100vw !important; }
+    .mob-margin-sm { margin: 0;}
+    .mob-p-10 { padding: 10px; }
+    .mob-require { flex-direction: column; }
+    .mob-title-1 { font-size: 16px; }
+    .mob-title-2 { font-size: 24px; }
+    .mob-text { font-size: 14px; }
 }
