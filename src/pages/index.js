@@ -58,7 +58,7 @@ const Home = () => {
   ]
 
   return (
-    <div className='bg-gray-50'>
+    <div className='bg-gray-50 lg:bg-red-200 sm:bg-green-400'>
 
       <div className='bg-attr h-screen' style={{backgroundImage: `url('/logistics-truck-02.jpeg')`}}>
         <div className='bg-wall-shadow h-full'>
@@ -66,9 +66,9 @@ const Home = () => {
             <Navbar />
 
             <div className='flex flex-col bg-banner justify-center items-center'>
-                <h3 className='font mb-4 text-2xl text-white'>NO #1 SOLUTION PROVIDERS FOR</h3>
+                <h3 className='font lg:mb-4 sm:mb-2 text-2xl mob-title-1 text-white'>NO #1 SOLUTION PROVIDERS FOR</h3>
                 <hr className='' />
-                <p className='text-6xl text-white text-center lg:mx-20'>
+                <p className='mob-title-2 mob-p-10 text-6xl text-white text-center lg:mx-20'>
                   <span className='font-alt'>LOGISTICS </span>
                   <span className='text-orange-200'>|| </span>
                   <span className='font-alt'> EQUIPMENT RENTALS </span>
@@ -83,7 +83,7 @@ const Home = () => {
       </div>
 
       <div className='bg-gray-100 p-10'>
-        <div className='flex justify-center mx-10 my-20'>
+        <div className='card-wrap-1 flex justify-center mx-10 my-20'>
           {
             titles.map((title, idx) => (
               <div key={idx} className="card w-96 bg-base-100 mx-2 shadow-xl">
@@ -101,7 +101,7 @@ const Home = () => {
       </div>
 
       <div className=''>
-        <div className='flex justify-center mx-10 my-20'>
+        <div className='card-wrap-2 flex justify-center mx-10 my-20'>
           <p className='font font-bold m-20 text-[#212121] text-2xl'>Why Choose Us?</p>
           {
             iconTitles.map((title, idx) => (
@@ -133,7 +133,7 @@ const Home = () => {
       <div>
         <p className='font text-center m-5 text-3xl text-[#212121]'>Our Partners</p>
         <hr className="border border-red-600 mx-auto w-[150px]" />
-        <div className='flex justify-center m-5'>
+        <div className='card-wrap-3 flex justify-center m-5'>
           { partnerLogos.map((img, idx) => (
               <img key={idx} className='bg-attr h-[60px] w-[100px] m-5' src={img} />
           ))}

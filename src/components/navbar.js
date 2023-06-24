@@ -7,11 +7,9 @@ const Navbar = () => {
 
     return (
         <div className="navbar bg-0 flex justify-between">
-            <a className="bg-attr font h-20 normal-case mx-4 text-white text-2xl w-32" style={{backgroundImage: `url('/007logo.png')`}}>
-                
-            </a>
+            <a className="bg-attr font h-20 logo normal-case mx-4 text-white text-2xl w-32" style={{backgroundImage: `url('/007logo.png')`}}></a>
             
-            <div className=''>
+            <div className='card-wrap-4'>
                 {
                     routePath.map((route, idx) => (
                         <Link href={route}><p className="font-medium link link-hover custom-link hover:no-underline mx-4 text-white text-md">{routeName[idx]}</p></Link>

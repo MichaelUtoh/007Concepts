@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,500;0,700;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -10,7 +9,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 
@@ -24,5 +23,26 @@ body {
 
 .custom-gradient {background: linear-gradient(to bottom, rgba(255, 0, 0, 0.9), rgba(147, 30, 99, 0.9));}
 .custom-link:hover {text-decoration: none; color: #fb923c;}
-.font {font-family: 'Fredericka the Great', cursive;}
-.font-alt {font-family: 'Raleway', sans-serif;}
+/* .font {font-family: 'Fredericka the Great', cursive;}
+.font-alt {font-family: 'Raleway', sans-serif;} */
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .bg-banner {height: 500px;}
+    .card-wrap-1, .card-wrap-2, .card-wrap-3 {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .link { color: blu; display: none; }
+    .logo {border: 1px solid red; height: 50px; margin-left: 10px; width: 100px;}
+    .mob-index {
+        border: 1px solid orange;
+        width: 100vw !important;
+    }
+    .mob-p-10 {padding: 10px;}
+    .mob-title-1 {font-size: 16px;}
+    .mob-title-2 {font-size: 24px;}
+}
