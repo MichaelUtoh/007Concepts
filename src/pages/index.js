@@ -102,7 +102,7 @@ const Home = () => {
 
       <div className=''>
         <div className='card-wrap-2 flex justify-center mx-10 my-20'>
-          <p className='font-bold m-20 mob-margin-sm mob-title-1 text-[#212121] text-2xl'>Why Choose Us?</p>
+          <p className='font-bold m-20 mob-margin-0 mob-title-1 text-[#212121] text-2xl'>Why Choose Us?</p>
           {
             iconTitles.map((title, idx) => (
               <div key={idx} className="card mob-card-choice w-48 border-0 border-gray-50 hover:shadow-lg m-3 p-2">

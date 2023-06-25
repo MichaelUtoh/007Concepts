@@ -24,15 +24,12 @@ body {
 .custom-gradient {background: linear-gradient(to bottom, rgba(255, 0, 0, 0.9), rgba(147, 30, 99, 0.9));}
 .custom-link:hover {text-decoration: none; color: #fb923c;}
 .mob-display-1 { display: none; }
-/* .font {font-family: 'Fredericka the Great', cursive;}
-.font-alt {font-family: 'Raleway', sans-serif;} */
-
-
 
 
 @media only screen and (max-width: 600px) {
     .bg-banner { height: 500px; }
     .bg-attr-img-1 { height: 50px; width: 50px; }
+    .bg-attr-img-2 { height: 220px; width: 300px; }
     .card-actions { margin-top: 0; }
     .card-body { padding: 10px }
     .card-body-1 { 
@@ -55,21 +52,27 @@ body {
     .logo { height: 50px; margin-left: 10px; width: 100px; }
     .mob-card-choice { width: 300px; }
     .mob-card-text { padding: 15px; }
-    .mob-container { padding-top: 30px; padding-bottom: 30px }
+    .mob-container { padding-top: 30px; padding-bottom: 30px; }
     .mob-display-0 { display: none; }
     .mob-display-1 { display: block; }
     .mob-flex-center { align-items: center; height: 200px;}
+    .mob-input-1 { width: 80%; }
     .mob-index { width: 100vw !important; }
-    .mob-margin-sm { margin: 0;}
-    .mob-margin-md { margin: 10px;}
+    .mob-margin-0 { margin: 0; }
+    .mob-margin-md { margin: 10px; }
     .mob-margin-b-sm { margin-bottom: 30px; }
     .mob-margin-t-sm { margin-top: 30px; }
     .mob-margin-l-sm { margin-left: 15px; }
     .mob-p-10 { padding: 10px; }
+    .mob-p-0 { padding: 0; }
+    .mob-p-0 { padding: 0; }
     .mob-require { flex-direction: column; }
     .mob-title-1 { font-size: 16px; }
     .mob-title-2 { font-size: 24px; }
+    .mob-title-3 { font-size: 28px; }
     .mob-text { font-size: 14px; }
+    .mob-width-full { width: 100vw; }
+    .mob-width-sm { width: 70%; }
 
     .rental { height: 250px; margin: auto; margin-top: 20px; width: 300px; }
 }

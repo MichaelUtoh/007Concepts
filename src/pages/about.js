@@ -15,7 +15,7 @@ const About = () => {
 
       <div class="">
         <div className="">
-            <div className="card-section flex justify-center mob-margin-sm mt-16 py-16">
+            <div className="card-section flex justify-center mob-margin-0 mt-16 py-16">
                 <div class="flex flex-col justify-center h-[300px] mob-margin-b-sm lg:w-5/12 mob-p-10">
                     <p className="mob-title-2 mob-margin-l-sm mb-2 text-[#212121] text-left text-4xl uppercase">OUR MISSION</p>
                     <hr className="border-2 border-t-orange-400 mob-margin-l-sm w-[100px]" />
@@ -35,7 +35,7 @@ const About = () => {
 
       <div class="">
           <div className="">
-              <div className="card-section mob-container flex justify-center mob-margin-sm mt-10 py-16">
+              <div className="card-section mob-container flex justify-center mob-margin-0 mt-10 py-16">
                   <div class="card-wrap-1 flex flex-col justify-start h-[300px] lg:w-4/12 mob-margin-b-sm mx-20 font">
                       <p className="uppercase font-bold mb-2 mob-title-2 text-left text-4xl text-[#212121]">Our Vision</p>
                       <hr className="border-2 border-t-orange-400 w-[100px]" />

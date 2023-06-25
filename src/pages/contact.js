@@ -14,23 +14,23 @@ const Logistics = () => {
             <Navbar />
 
             <div className='flex flex-col h-[300px] items-center justify-center'>
-                <p className='font-alt font-bold text-[4rem] text-white uppercase'>Contact us</p>
+                <p className='font-alt font-bold text-[4rem] mob-title-2 text-white uppercase'>Contact us</p>
                 <hr className="border border-red-600 w-[250px]" />
             </div>
 
             </div>
 
-            <div className='flex h-[600px] justify-center'>
+            <div className='card-section flex justify-center'>
 
-                <div className='flex flex-col justify-start mx-2 my-10 p-10 w-5/12'>
+                <div className='flex flex-col justify-start mob-p-0 mob-width-full mx-2 my-10 p-10 w-5/12'>
                     <p className='font my-2 text=[#212121] text-2xl uppercase'>We're ready, let's talk.</p>
-                    <input type="text" placeholder="Fullname" className="input input-bordered mb-4 rounded-none w-[500px]" />
-                    <input type="text" placeholder="Email" className="input input-bordered mb-4 rounded-none w-[500px]" />
-                    <textarea className="rounded-none textarea textarea-bordered w-[500px]" placeholder="Message"></textarea>
+                    <input type="text" placeholder="Fullname" className="input input-bordered mb-4 mob-input-1 rounded-none w-[500px]" />
+                    <input type="text" placeholder="Email" className="input input-bordered mb-4 mob-input-1 rounded-none w-[500px]" />
+                    <textarea className="mob-input-1 rounded-none textarea textarea-bordered w-[500px]" placeholder="Message"></textarea>
                     <button className='bg-red-600 hover:bg-red-500 my-10 p-3 rounded-full text-white uppercase w-[200px]'>Call us now</button>
                 </div>
 
-                <div className='flex flex-col justify-start mx-2 my-10 p-10 w-5/12'>
+                <div className='flex flex-col justify-start mob-margin-0 mob-card-text mob-width-full mx-2 my-10 p-10 w-5/12'>
                     <p className='font my-2 text=[#212121] text-2xl uppercase'>Contact Information.</p>
 
                     <div className='my-2'>

@@ -12,17 +12,15 @@ const About = () => {
 
         <div className='bg-attr h-[370px]' style={{backgroundImage: `url('/equipment1.png')`}}>
             <div className='bg-wall-shadow-alt h-full'>
-            <Navbar />
-
-            <div className='flex h-[300px] items-center justify-center'>
-                <p className='font-alt font-bold text-6xl text-white uppercase'>Equipment Rental Services.</p>
-            </div>
-
+                <Navbar />
+                <div className='flex h-[300px] items-center justify-center'>
+                    <p className='font-alt font-bold mob-title-2 mob-width-sm text-6xl text-white uppercase'>Equipment Rental Services.</p>
+                </div>
             </div>
         </div>
 
         <div className=''>
-                <div className='mx-auto p-10 w-9/12'>
+                <div className='mob-margin-sm mob-width-full mx-auto p-10 w-9/12'>
                 <p className=''>
                     De charlies Equipment Rental & Logistics Pvt. Ltd. provides Mobile Hydraulic Crane, 
                     Crawler Cranes, Dredging Machine ,Forklifts etc. We have a simple yet effective 
@@ -51,12 +49,12 @@ const About = () => {
 
             <div className='flex flex-wrap justify-center m-5 mb-10 mx-auto w-10/12'>
             { images.map((img, idx) => (
-                <img key={idx} className='bg-attr h-64 w-[400px] m-5' src={img} />
+                <img key={idx} className='bg-attr bg-attr-img-2 h-64 w-[400px] m-5' src={img} />
             ))}
             </div>
 
             <div className='flex flex-col m-10'>
-                <p className='font text-[#212121] text-[4rem] text-center'>For Best Price & Quality Equipment</p>
+                <p className='font mob-title-2 text-[#212121] text-[4rem] text-center'>For Best Price & Quality Equipment</p>
                 <button className='bg-red-600 hover:bg-red-500 mx-auto my-10 p-3 rounded-full text-white uppercase w-[200px]'>Call us now</button>
             </div>
         <Footer />

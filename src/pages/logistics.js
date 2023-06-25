@@ -3,22 +3,26 @@ import Navbar from '@/components/navbar'
 import React from 'react'
 
 const Logistics = () => {
-    const images = ['/logistics-truck.jpeg', '/logistics-container.jpeg', '/logistics-truck-02.jpeg']
+  const images = [
+    '/logistics-truck.jpeg',
+    '/logistics-container.jpeg',
+    '/logistics-truck-02.jpeg'
+  ]
+
   return (
     <div className='bg-gray-50'>
 
-      <div className='bg-attr h-[400px]' style={{backgroundImage: `url('https://decharlieshireservices.com.ng/wp-content/uploads/2022/08/head1.jpg')`}}>
+      <div className='bg-attr h-[400px]' style={{backgroundImage: `url('/logistics-truck.jpeg')`}}>
         <div className='bg-wall-shadow-alt h-full'>
           <Navbar />
 
           <div className='flex h-[300px] items-center justify-center'>
-            <p className='font-alt font-bold text-[4rem] text-white uppercase'>Logistic services</p>
+            <p className='font-alt font-bold text-[4rem] mob-title-2 text-white uppercase'>Logistic services</p>
           </div>
-
         </div>
 
         <div className=''>
-            <div className='mx-auto p-10 w-9/12'>
+            <div className='mob-margin-sm mob-width-full mx-auto p-10 w-9/12'>
             <p className=''>
                 De’ Charlie Logistics are professionals that provide the solutions you need. 
                 We provide our clients with a wide range of services including physical inventory counts, 
@@ -35,9 +39,9 @@ const Logistics = () => {
             </div>
         </div>
 
-        <div className='flex justify-center m-5 mb-10'>
+        <div className='card-section flex justify-center m-5 mb-10'>
             { images.map((img, idx) => (
-                <div key={idx} className='bg-attr h-64 w-[350px] m-5' style={{backgroundImage: `url(${img})`}}></div>
+                <div key={idx} className='bg-attr bg-attr-img-2 h-64 w-[350px] m-5' style={{backgroundImage: `url(${img})`}}></div>
             ))}
         </div>
 
