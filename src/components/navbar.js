@@ -27,6 +27,26 @@ const Navbar = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
             </button>
+
+            <div className="drawer drawer-end mob-display-1">
+                <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
+                <svg 
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 text-white"
+                    fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+                <div className="drawer-side">
+                    <label htmlFor="my-drawer-4" className="drawer-overlay"></label>
+                    <ul className="menu p-4 w-80 h-full bg-base-200 text-base-content">
+                    {/* Sidebar content here */}
+                    <li><a>Sidebar Item 1</a></li>
+                    <li><a>Sidebar Item 2</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     )
 }
