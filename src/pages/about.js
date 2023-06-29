@@ -74,7 +74,7 @@ const About = () => {
             <p className="mob-title-2 text-5xl font text-white">MEET OUR TEAM</p>
             <div className="card-section lg:flex items-start justify-center w-full">
 
-              <div class="border-2 flex flex-col justify-start h-[300px] lg:w-3/12 mob-flex-center pt-14 font">
+              <div class="flex flex-col justify-start h-[300px] lg:w-3/12 mob-flex-center pt-14 font">
                   <p className="uppercase mb-2 text-left font-thin text-lg text-white">MANAGING DIRECTOR</p>
                   <p className="mob-display-0 lg:text-4xl lg:mt-5 font-alt text-white">
                       KINGSLEY <br/> KELECHUKWU <br/> OKEREKE​
@@ -89,7 +89,7 @@ const About = () => {
                   </section>
               </div>
 
-              <div class="border-2 flex flex-col justify-start h-[300px] lg:w-3/12 mob-flex-center pt-14 font">
+              <div class="flex flex-col justify-start h-[300px] lg:w-3/12 mob-flex-center pt-14 font">
                   <p className="uppercase mb-2 text-left font-thin text-lg text-white">C.E.O</p>
                   <p className="mob-display-0 lg:text-4xl lg:mt-5 font-alt text-white">
                       CHARLES <br/> IKECHUKWU <br/> ANI
@@ -104,7 +104,7 @@ const About = () => {
                   </section>
               </div>
 
-              <div class="border-2 flex flex-col justify-start h-[300px] lg:w-3/12 mob-flex-center pt-14 font">
+              <div class="flex flex-col justify-start h-[300px] lg:w-3/12 mob-flex-center pt-14 font">
                   <p className="uppercase mb-2 text-left font-thin text-lg text-white">HUMAN RESOURCE MANAGER</p>
                   <p className="mob-display-0 lg:text-4xl lg:mt-5 font-alt text-white">
                       MICHELLE <br/> GRACE <br/> FRANCIS
