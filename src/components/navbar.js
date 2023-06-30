@@ -12,7 +12,7 @@ const Navbar = () => {
             <div className='card-wrap-4'>
                 {
                     routePath.map((route, idx) => (
-                        <Link href={route}><p className="font-medium navlink link-hover custom-link hover:no-underline mx-4 text-white text-md">{routeName[idx]}</p></Link>
+                        <Link key={idx} href={route}><p className="font-medium navlink link-hover custom-link hover:no-underline mx-4 text-white text-md">{routeName[idx]}</p></Link>
                     ))
                 }
             </div>

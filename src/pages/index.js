@@ -58,7 +58,7 @@ const Home = () => {
   ]
 
   return (
-    <div className='bg-gray-50 lg:bg-red-200 sm:bg-green-400'>
+    <div className='bg-gray-50'>
 
       <div className='bg-attr h-screen' style={{backgroundImage: `url('/logistics-truck-02.jpeg')`}}>
         <div className='bg-wall-shadow h-full'>
