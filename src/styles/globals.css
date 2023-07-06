@@ -19,11 +19,26 @@ body {
 .bg-wall-shadow-alt {background: rgba(0, 0, 0, 0.5);}
 .bg-wall-shadow-wht {background: rgba(255, 255, 255, 0.5);}
 
-.bod {border: 1px solid red;}
+.drawer-end { display: none; }
 
 .custom-gradient {background: linear-gradient(to bottom, rgba(255, 0, 0, 0.9), rgba(147, 30, 99, 0.9));}
 .custom-link:hover {text-decoration: none; color: #fb923c;}
+.drawer-end { border: 1px solid red; }
 .mob-display-1 { display: none; }
+
+
+@media only screen and (max-width: 1200px){
+    .input-ctrl {
+        max-width: 100%;
+    }
+    .contact-wrap-1 {
+        max-width: 100%;
+    }
+    .contact-wrap-2 {
+        max-width: 100%;
+    }
+    .navbar { display: none; }
+}
 
 
 @media only screen and (max-width: 600px) {
@@ -74,5 +89,6 @@ body {
     .mob-width-full { width: 100vw; }
     .mob-width-sm { width: 70%; }
 
+    .drawer-end { border: 1px solid #c96a6a; position: relative; }
     .rental { height: 250px; margin: auto; margin-top: 20px; width: 300px; }
 }

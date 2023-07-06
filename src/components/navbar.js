@@ -28,7 +28,8 @@ const Navbar = () => {
             </svg>
             </button>
 
-            <div className="drawer drawer-end mob-display-1">
+            <div className="drawer drawer-end mob-display-menu">
+                <a className="bg-attr font h-20 logo normal-case mx-4 text-white text-2xl w-32" style={{backgroundImage: `url('/007logo.png')`}}></a>
                 <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
                 <svg 
                     xmlns="http://www.w3.org/2000/svg"

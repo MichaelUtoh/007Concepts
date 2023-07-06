@@ -39,7 +39,7 @@ const Logistics = () => {
         <div className=''>
             <div className='mob-margin-0 mob-width-full mx-auto p-10 w-9/12'>
             <p className=''>
-                De’ Charlies Services is one of the major car rental and auto leasing companies in Nigeria. 
+                Double07 Services is one of the major car rental and auto leasing companies in Nigeria. 
                 We provide reliable and affordable rental services with core competency in fleet management 
                 services.We are a logistics company that has ventures into the corporate world of  car rental 
                 services and fleet management business in Nigeria. We have clients/customers that cuts across 

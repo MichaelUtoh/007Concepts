@@ -13,10 +13,10 @@ const About = () => {
         </div>
       </div>
 
-      <div class="">
+      <div className="">
         <div className="">
             <div className="card-section flex justify-center mob-margin-0 mt-16 py-16">
-                <div class="flex flex-col justify-center h-[300px] mob-margin-b-sm lg:w-5/12 mob-p-10">
+                <div className="flex flex-col justify-center h-[300px] mob-margin-b-sm lg:w-5/12 mob-p-10">
                     <p className="mob-title-2 mob-margin-l-sm mb-2 text-[#212121] text-left text-4xl uppercase">OUR MISSION</p>
                     <hr className="border-2 border-t-orange-400 mob-margin-l-sm w-[100px]" />
                     <p className="font-alt lg:w-10/12 lg:mt-5 mob-card-text">
@@ -28,15 +28,15 @@ const About = () => {
                         provide a safe and secure work environment.
                     </p>
                 </div>
-                <div class="bg-attr h-[300px] w-[500px] rental" style={{backgroundImage: `url("/rental.webp")`}}></div>
+                <div className="bg-attr h-[300px] w-[500px] rental" style={{backgroundImage: `url("/rental.webp")`}}></div>
             </div>
         </div>
       </div>
 
-      <div class="">
+      <div className="">
           <div className="">
               <div className="card-section mob-container flex justify-center mob-margin-0 mt-10 py-16">
-                  <div class="card-wrap-1 flex flex-col justify-start h-[300px] lg:w-4/12 mob-margin-b-sm mx-20 font">
+                  <div className="card-wrap-1 flex flex-col justify-start h-[300px] lg:w-4/12 mob-margin-b-sm mx-20 font">
                       <p className="uppercase font-bold mb-2 mob-title-2 text-left text-4xl text-[#212121]">Our Vision</p>
                       <hr className="border-2 border-t-orange-400 w-[100px]" />
                       <p className="font-alt lg:mt-5">
@@ -49,10 +49,10 @@ const About = () => {
                       </p>
                   </div>
 
-                  <div class="card-wrap-1 flex flex-col justify-start h-[300px] lg:w-4/12 mob-margin-t-sm mx-20 font">
+                  <div className="card-wrap-1 flex flex-col justify-start h-[300px] lg:w-4/12 mob-margin-t-sm mx-20 font">
                       <p className="uppercase font-bold mob-margin-sm mob-title-2 mb-2 text-left text-4xl text-[#212121]">Our Core Values</p>
                       <hr className="border-2 border-t-orange-400 w-[100px]" />
-                      <p className="font-alt lg:mt-5">
+                      <div className="font-alt lg:mt-5">
                           Some of our core values lies in our abilities of being able to give our customers 
                           satisfaction and a positivity. We pride ourselves on giving our client <br/>
                           
@@ -62,7 +62,7 @@ const About = () => {
                               <li className="mt-2">STRONG RELATIONSHIPS</li>
                               <li className="mt-2">TRUST</li>
                           </ul>
-                      </p>
+                      </div>
                   </div>
 
               </div>
@@ -74,8 +74,8 @@ const About = () => {
             <p className="mob-title-2 text-5xl font text-white">MEET OUR TEAM</p>
             <div className="card-section lg:flex items-start justify-center w-full">
 
-              <div class="flex flex-col justify-start h-[300px] lg:w-3/12 mob-flex-center pt-14 font">
-                  <p className="uppercase mb-2 text-left font-thin text-lg text-white">MANAGING DIRECTOR</p>
+              <div className="flex flex-col justify-start h-[300px] lg:w-3/12 mob-flex-center pt-14 font">
+                  <p className="uppercase mb-2 text-left font-thin text-lg text-white">C.E.O</p>
                   <p className="mob-display-0 lg:text-4xl lg:mt-5 font-alt text-white">
                       KINGSLEY <br/> KELECHUKWU <br/> OKEREKE​
                   </p>
@@ -89,13 +89,13 @@ const About = () => {
                   </section>
               </div>
 
-              <div class="flex flex-col justify-start h-[300px] lg:w-3/12 mob-flex-center pt-14 font">
-                  <p className="uppercase mb-2 text-left font-thin text-lg text-white">C.E.O</p>
+              <div className="flex flex-col justify-start h-[300px] lg:w-3/12 mob-flex-center pt-14 font">
+                  <p className="uppercase mb-2 text-left font-thin text-lg text-white">Manager</p>
                   <p className="mob-display-0 lg:text-4xl lg:mt-5 font-alt text-white">
-                      CHARLES <br/> IKECHUKWU <br/> ANI
+                      MICHAEL <br/> CHIMA <br/> UTOH
                   </p>
                   <p className="mob-display-1 lg:text-4xl lg:mt-5 font-alt text-white">
-                      CHARLES IKECHUKWU ANI
+                      MICHAEL CHIMA UTOH
                   </p>
                   <section className="flex py-4">
                       <FiFacebook color='white' style={{ marginRight: "15px" }} />
@@ -104,7 +104,7 @@ const About = () => {
                   </section>
               </div>
 
-              <div class="flex flex-col justify-start h-[300px] lg:w-3/12 mob-flex-center pt-14 font">
+              <div className="flex flex-col justify-start h-[300px] lg:w-3/12 mob-flex-center pt-14 font">
                   <p className="uppercase mb-2 text-left font-thin text-lg text-white">HUMAN RESOURCE MANAGER</p>
                   <p className="mob-display-0 lg:text-4xl lg:mt-5 font-alt text-white">
                       MICHELLE <br/> GRACE <br/> FRANCIS
