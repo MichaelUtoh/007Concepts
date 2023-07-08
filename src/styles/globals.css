@@ -23,7 +23,6 @@ body {
 
 .custom-gradient {background: linear-gradient(to bottom, rgba(255, 0, 0, 0.9), rgba(147, 30, 99, 0.9));}
 .custom-link:hover {text-decoration: none; color: #fb923c;}
-.drawer-end { border: 1px solid red; }
 .mob-display-1 { display: none; }
 
 
@@ -37,7 +36,12 @@ body {
     .contact-wrap-2 {
         max-width: 100%;
     }
-    .navbar { display: none; }
+    .mob-title-2 { font-size: 34px; }
+    .modal { border: 2px solid red; background-color: #fff; z-index: 1000;}
+    .nav1 { display: none; }
+    .nav2 { display: flex; flex-direction: row-reverse; justify-content: space-between; position: absolute;}
+    .mob-menu-ctrl { color: #fff; position: relative; top: 30px; right: 30px; z-index: 1000;}
+    .drawer-side { position: relative;}
 }
 
 
@@ -71,6 +75,7 @@ body {
     .mob-display-0 { display: none; }
     .mob-display-1 { display: block; }
     .mob-flex-center { align-items: center; height: 200px;}
+    .mob-hr { width: 70px; }
     .mob-input-1 { width: 80%; }
     .mob-index { width: 100vw !important; }
     .mob-margin-0 { margin: 0; }
@@ -89,6 +94,5 @@ body {
     .mob-width-full { width: 100vw; }
     .mob-width-sm { width: 70%; }
 
-    .drawer-end { border: 1px solid #c96a6a; position: relative; }
     .rental { height: 250px; margin: auto; margin-top: 20px; width: 300px; }
 }

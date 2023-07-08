@@ -18,32 +18,25 @@ const Logistics = () => {
     const [errors, setErrors] = useState({})
 
     const images = ['/logistics-truck.jpeg', '/logistics-container.jpeg', '/logistics-truck-02.jpeg']
-    const url = 'https://sheet.best/api/sheets/cf969697-682a-40e3-bad4-d54803eeeacf';
+    const url = 'https://sheet.best/api/sheets/09b4407a-63ef-4978-b607-d2953f9e86c2';
 
     const reset = () => {
         setName(''), setEmail(''), setMessage('');
     };
 
-    const onSubmit = async (e) => {
+    const onSubmit = (e) => {
         e.preventDefault();
+        console.log(url);
 
-        try {
-            await ValidationSchema.validate({ name,email,message })
-            const data = { Name: name, Email: email, Message: message };
+        res = ValidationSchema.validate({ name, email, message })
+        console.log('1', res);
+        const data = { Name: name, Email: email, Message: message };
+        console.log(data);
 
-            axios.post(url, data).then(() => {
-                console.log(data);
-                reset();
-            })
-        } catch (error) {
-            const validationErrors = {};
-            console.log(error);
-
-            error.inner.forEach((err) => {
-                validationErrors[err.path] = err.message;
-            })
-            setErrors(validationErrors);
-        }
+        // axios.post(url, data).then(() => {
+        //     console.log(data);
+        //     reset();
+        // })
     }
 
     return (
@@ -54,29 +47,29 @@ const Logistics = () => {
                 <Navbar />
                 <div className='flex flex-col h-[300px] items-center justify-center'>
                     <p className='font-alt font-bold text-[4rem] mob-title-2 text-white uppercase'>Contact us</p>
-                    <hr className="border border-red-600 w-[250px]" />
+                    <hr className="border border-red-600 w-[250px] mob-hr" />
                 </div>
             </div>
 
             <div className='card-section flex justify-center'>
 
-                <div className='flex flex-col justify-start mob-p-0 mob-width-full mx-2 my-10 p-10 w-5/12'>
+                <div className='contact-wrap-1 flex flex-col justify-start mob-p-0 mob-width-full mx-2 my-10 p-10 w-5/12'>
                     <form>
                         <p className='font my-2 text=[#212121] text-2xl uppercase'>We're ready, let's talk.</p>
-                        <input onChange={(e) => setName(e.target.value)} type="text" placeholder="Fullname" className="input input-bordered mb-4 mob-input-1 w-[500px]" />
-                        {errors.name && <p className='bg-red-200'>{errors.name}</p>}
+                        <input onChange={(e) => setName(e.target.value)} type="text" placeholder="Fullname" className="input input-bordered input-ctrl mb-4 mob-input-1 w-[500px]" />
+                        {errors.name && <span className='bg-red-200'>{errors.name}</span>}
 
-                        <input onChange={(e) => setEmail(e.target.value)} type="text" placeholder="Email" className="input input-bordered mb-4 mob-input-1 rounded-none w-[500px]" />
-                        {errors.email && <p className='bg-red-200'>{errors.email}</p>}
+                        <input onChange={(e) => setEmail(e.target.value)} type="text" placeholder="Email" className="input input-bordered input-ctrl mb-4 mob-input-1 rounded-none w-[500px]" />
+                        {errors.email && <span className='bg-red-200'>{errors.email}</span>}
 
-                        <textarea onChange={(e) => setMessage(e.target.value)} className="mob-input-1 rounded-none textarea textarea-bordered w-[500px]" placeholder="Message"></textarea>
-                        {errors.message && <p className='bg-red-200'>{errors.message}</p>}
+                        <textarea onChange={(e) => setMessage(e.target.value)} className="mob-input-1 rounded-none textarea textarea-bordered input-ctrl w-[500px]" placeholder="Message"></textarea>
+                        {errors.message && <span className='bg-red-200'>{errors.message}</span>}
 
                         <button onClick={(e) => onSubmit(e)} className='bg-red-600 hover:bg-red-500 my-10 p-3 rounded-full text-white uppercase w-[200px]'>Call us now</button>
                     </form>
                 </div>
 
-                <div className='flex flex-col justify-start mob-margin-0 mob-card-text mob-width-full mx-2 my-10 p-10 w-5/12'>
+                <div className='contact-wrap-2 flex flex-col justify-start mob-margin-0 mob-card-text mob-width-full mx-2 my-10 p-10 w-5/12'>
                     <p className='font my-2 text=[#212121] text-2xl uppercase'>Contact Information.</p>
 
                     <div className='my-2'>

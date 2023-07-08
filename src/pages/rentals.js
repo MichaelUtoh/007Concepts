@@ -22,7 +22,7 @@ const About = () => {
         <div className=''>
                 <div className='mob-margin-sm mob-width-full mx-auto p-10 w-9/12'>
                 <p className=''>
-                    De charlies Equipment Rental & Logistics Pvt. Ltd. provides Mobile Hydraulic Crane, 
+                    Double07concepts Equipment Rental & Logistics Pvt. Ltd. provides Mobile Hydraulic Crane, 
                     Crawler Cranes, Dredging Machine ,Forklifts etc. We have a simple yet effective 
                     attitude towards safety. Every high-risk task is minimized with a controlled 
                     risk assessment ensuring our procedures are of the highest standard..
