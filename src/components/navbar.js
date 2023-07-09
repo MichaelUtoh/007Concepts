@@ -32,10 +32,9 @@ const Navbar = () => {
             </button>
         </div>
 
-        <div className="drawer drawer-end mob-display-menu nav2">
-            <a className="bg-attr font h-20 logo normal-case mx-4 text-white text-2xl w-32" style={{backgroundImage: `url('/007logo.png')`}}></a>
-            <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
-            {!showMenu && <AiOutlineMenu onClick={() => setShowMenu(!showMenu)} id="my-drawer" className="mob-menu-ctrl" />}
+        <div className="drawer drawer-end nav2">
+            <a className="bg-attr font h-20 logo mob-logo normal-case mx-4 text-white text-2xl w-32" style={{backgroundImage: `url('/007logo.png')`}}></a>
+            {!showMenu && <AiOutlineMenu onClick={() => setShowMenu(!showMenu)} id="my-drawer" className="cursor-pointer mob-menu-ctrl" />}
             {showMenu && <Popup useModal={ showMenu ? true : false } />}
         </div>
         </>

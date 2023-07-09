@@ -67,7 +67,7 @@ const Logistics = () => {
         </div>
 
         <div className='flex justify-center m-5 mb-10'>
-          <button className='bg-red-600 hover:bg-red-500 p-3 rounded-full text-white w-[200px]'>Get a Quote</button>
+          <a href='/contact'><button className='bg-red-600 hover:bg-red-500 p-3 rounded-full text-white w-[200px]'>Get a Quote</button></a>
         </div>
 
         <div className='card-section flex justify-center m-5 mb-10'>

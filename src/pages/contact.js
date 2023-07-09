@@ -59,13 +59,13 @@ const Logistics = () => {
                         <input onChange={(e) => setName(e.target.value)} type="text" placeholder="Fullname" className="input input-bordered input-ctrl mb-4 mob-input-1 w-[500px]" />
                         {errors.name && <span className='bg-red-200'>{errors.name}</span>}
 
-                        <input onChange={(e) => setEmail(e.target.value)} type="text" placeholder="Email" className="input input-bordered input-ctrl mb-4 mob-input-1 rounded-none w-[500px]" />
+                        <input onChange={(e) => setEmail(e.target.value)} type="text" placeholder="Email" className="input input-bordered input-ctrl mb-4 mob-input-1 w-[500px]" />
                         {errors.email && <span className='bg-red-200'>{errors.email}</span>}
 
-                        <textarea onChange={(e) => setMessage(e.target.value)} className="mob-input-1 rounded-none textarea textarea-bordered input-ctrl w-[500px]" placeholder="Message"></textarea>
+                        <textarea onChange={(e) => setMessage(e.target.value)} className="mob-input-1 textarea textarea-bordered input-ctrl w-[500px]" placeholder="Message"></textarea>
                         {errors.message && <span className='bg-red-200'>{errors.message}</span>}
 
-                        <button onClick={(e) => onSubmit(e)} className='bg-red-600 hover:bg-red-500 my-10 p-3 rounded-full text-white uppercase w-[200px]'>Call us now</button>
+                        <button onClick={(e) => onSubmit(e)} className='bg-red-600 hover:bg-red-500 my-10 p-3 rounded-full text-white uppercase w-[200px]'>Submit</button>
                     </form>
                 </div>
 

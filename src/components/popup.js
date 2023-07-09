@@ -2,19 +2,18 @@ import {useState} from 'react'
 import Link from 'next/link'
 
 export const Popup = ({useModal}) => {
-    const [showModal, setShowModal] = useState(false);
 
     const routePath = ['/', '/about', '/logistics', '/hire', '/rentals', '/contact']
     const routeName = ['Home', 'About Us', 'Logistics', 'Car Hire Services', 'Equipment Rentals', 'Contact Us']
     
     function handleCloseModal() {
-        useModal = false;
+        useModal = null;
         console.log(useModal);
     }
 
     return (
         <>
-            { useModal && <div className="absolute bg-white flex flex-col h-screen items-center justify-start popup px-2 w-full">
+            { useModal && <div className="absolute bg-white flex flex-col h-[400px] items-center justify-start popup px-2 w-full">
 
                 <div className='flex justify-end w-full'>
                     <div
