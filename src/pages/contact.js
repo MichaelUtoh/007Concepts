@@ -54,7 +54,7 @@ const Logistics = () => {
             <div className='card-section flex justify-center'>
 
                 <div className='contact-wrap-1 flex flex-col justify-start mob-p-0 mob-width-full mx-2 my-10 p-10 w-5/12'>
-                    <form>
+                    <form className='flex flex-col items-start'>
                         <p className='font my-2 text=[#212121] text-2xl uppercase'>We're ready, let's talk.</p>
                         <input onChange={(e) => setName(e.target.value)} type="text" placeholder="Fullname" className="input input-bordered input-ctrl mb-4 mob-input-1 w-[500px]" />
                         {errors.name && <span className='bg-red-200'>{errors.name}</span>}
