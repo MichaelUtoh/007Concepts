@@ -4,8 +4,18 @@ import React, { useState } from 'react'
 import { FiFacebook, FiInstagram, FiTwitter } from "react-icons/fi";
 import axios from 'axios';
 import * as Yup from 'yup';
+import dotenv from 'dotenv';
+dotenv.config();
+
 
 const Logistics = () => {
+    const sheetyUrl = process.env.REACT_APP_SHEETY_URL;
+    const images = [
+        '/logistics-truck.jpeg',
+        '/logistics-container.jpeg',
+        '/logistics-truck-02.jpeg'
+    ]
+
     const ValidationSchema = Yup.object().shape({
         name: Yup.string().required('Fullname is required'),
         email: Yup.string().email('Invalid Email').required('Email is required'),
@@ -17,8 +27,6 @@ const Logistics = () => {
     const [message, setMessage] = useState('')
     const [errors, setErrors] = useState({})
 
-    const images = ['/logistics-truck.jpeg', '/logistics-container.jpeg', '/logistics-truck-02.jpeg']
-    const url = 'https://sheet.best/api/sheets/09b4407a-63ef-4978-b607-d2953f9e86c2';
 
     const reset = () => {
         setName(''), setEmail(''), setMessage('');
@@ -26,17 +34,24 @@ const Logistics = () => {
 
     const onSubmit = (e) => {
         e.preventDefault();
-        console.log(url);
+        // res = ValidationSchema.validate({ name, email, message })
 
-        res = ValidationSchema.validate({ name, email, message })
-        console.log('1', res);
-        const data = { Name: name, Email: email, Message: message };
-        console.log(data);
+        try {
+            let now = new Date()
+            let body = {sheet1: { Fullname: name, Email: email, Message: message, Date: now }}
 
-        // axios.post(url, data).then(() => {
-        //     console.log(data);
-        //     reset();
-        // })
+            fetch(sheetyUrl.toString(), {
+                method: 'POST',
+                body: JSON.stringify(body)
+            })
+            .then((response) => { response.json(); reset()})
+            .then(json => {
+                // Do something with object
+                console.log(json.sheet1);
+            });
+        } catch (error) {
+            console.error('An error occured!')
+        }
     }
 
     return (

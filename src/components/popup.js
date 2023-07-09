@@ -8,7 +8,6 @@ export const Popup = ({useModal}) => {
     
     function handleCloseModal() {
         useModal = null;
-        console.log(useModal);
     }
 
     return (

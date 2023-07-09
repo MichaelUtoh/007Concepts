@@ -8,7 +8,6 @@ const Navbar = () => {
     const routePath = ['/', '/about', '/logistics', '/hire', '/rentals', '/contact']
     const routeName = ['Home', 'About Us', 'Logistics', 'Car Hire Services', 'Equipment Rentals', 'Contact Us']
 
-    console.log(showMenu);
     return (
         <>
         <div className="navbar bg-0 flex justify-between nav1">
