@@ -89,17 +89,17 @@ const Logistics = () => {
 
                     <div className='my-2'>
                         <p className='font-bold'>Address​</p>
-                        <p>13 Ibeju Lekki Way , Dolphin Estate , Lagos State Nigeria</p>
+                        <p>20b Ibeju Lekki, Dolphin Estate , Lagos State Nigeria</p>
                     </div>
                     <div className='my-2'>
                         <p className='font-bold'>Email Us</p>
-                        <p>info@decharlieshireservices.com.ng</p>
-                        <p>kingsley.okereke@decharlieservices.com.ng</p>
+                        <p>info@double07concepts.com</p>
+                        <p>kingsley.okereke@double07concepts.com</p>
                     </div>
                     <div className='my-2'>
                         <p className='font-bold'>Call Us</p>
                         <p>+234 (0) 808 954 1529</p>
-                        <p>+234 (0) 808 044 9647</p>
+                        <p>+234 (0) 912 871 9721</p>
                     </div>
                     <div className='my-2'>
                         <p className='font-bold'>Follow Us</p>

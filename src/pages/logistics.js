@@ -24,7 +24,7 @@ const Logistics = () => {
         <div className=''>
             <div className='mob-margin-sm mob-width-full mx-auto p-10 w-9/12'>
             <p className=''>
-                De’ Charlie Logistics are professionals that provide the solutions you need. 
+                Double07Concepts Logistics are professionals that provide the solutions you need. 
                 We provide our clients with a wide range of services including physical inventory counts, 
                 quality control and inspection of goods, returns processing, promotional pricing, 
                 custom inventory reports, Fleets managemant , Truck delivery services ranging from 5tons – 30tons and more.

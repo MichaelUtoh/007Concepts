@@ -107,11 +107,9 @@ const About = () => {
               <div className="flex flex-col justify-start h-[300px] lg:w-3/12 mob-flex-center pt-14 font">
                   <p className="uppercase mb-2 text-left font-thin text-lg text-white">HUMAN RESOURCE MANAGER</p>
                   <p className="mob-display-0 lg:text-4xl lg:mt-5 font-alt text-white">
-                      MICHELLE <br/> GRACE <br/> FRANCIS
+                      JAMES <br/> BAMEKE <br/> ORIFA
                   </p>
-                  <p className="mob-display-1 lg:text-4xl lg:mt-5 font-alt text-white">
-                      MICHELLE GRACE FRANCIS
-                  </p>
+                  <p className="mob-display-1 lg:text-4xl lg:mt-5 font-alt text-white">JAMES BAMEKE ORIFA</p>
                   <section className="flex py-4">
                       <FiFacebook color='white' style={{ marginRight: "15px" }} />
                       <FiTwitter color='white' style={{ marginRight: "15px" }} />
