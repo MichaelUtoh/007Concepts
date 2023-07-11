@@ -17,7 +17,7 @@ const Logistics = () => {
   return (
     <div className='bg-gray-50'>
 
-      <div className='bg-attr h-[600px]' style={{backgroundImage: `url("logistics01.webp")`}}>
+      <div className='bg-attr h-[600px]' style={{backgroundImage: `url("http://upload.wikimedia.org/wikipedia/commons/a/ae/2013_Toyota_Hilux_4x4_G.jpg")`}}>
         <div className='bg-wall-shadow-alt h-full'>
           <Navbar />
 
